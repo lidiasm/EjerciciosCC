@@ -2,3 +2,7 @@
 *.pdf
 *.odt
 *.txt
+
+# Pip
+Pipfile
+.lock
