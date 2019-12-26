@@ -5,7 +5,7 @@
 Como mi proyecto se está desarrollando en Python creo que es más conveniente realizar estos ejercicios en el mismo lenguaje para que posteriormente pueda aplicar los conocimientos adquiridos y llevar a cabo los hitos. En este caso un *framework* similar a express es *Flask*, con el cual se pueden desarrollar microservicios en Python. Para este ejercicio he reutilizado el microservicio del hito 3 que es capaz de conectarse a la API Petfinder y descargar datos sobre veinte mascotas para posteriormente visualizarlos en formato *JSON*. La implementación ser puede encontrar en el siguiente [fichero.](https://github.com/lidiasm/EjerciciosCC/blob/master/src/rest.py)
 Un ejemplo de su funcionamiento se puede comprobar a continuación, en el que conectamos con la API Petfinder de forma satisfactoria y posteriormente nos descargamos los datos accediendo a la segunda ruta.
 
-![Probando microservicio ejercicio 1.](https://github.com/lidiasm/ProyectoCC/blob/master/docs/imgs/REST%20descargar%20datos.png)
+![Probando microservicio ejercicio 1.](https://github.com/lidiasm/EjerciciosCC/blob/master/imagenes/REST%20descargar%20datos.png)
 
 #### Ejercicio 2. Programar un microservicio en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.
 
