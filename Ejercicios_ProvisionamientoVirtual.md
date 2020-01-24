@@ -1,1 +1,9 @@
 ## Ejercicios del tema de Provisionamiento en infraestructuras virtuales.
+
+### Ejercicio 2. Desplegar la aplicación de cualquier otra asignatura donde se tenga ya el código fuente con todos los módulos necesarios usando un playbook de Ansible.
+
+En este ejercicio reutilizaremos las recetas de provisionamiento desarrolladas para la última práctica. En mi caso se han implementado un fichero denominado `playbook.yml` en el que se encuentran las tareas generales para poder instalar las herramientas necesarias para que las máquinas virtuales creadas puedan trabajar con mi API. Este fichero, a su vez, utiliza tanto roles de *Galaxy* como un rol propio denominado `common` en el que se encuentran tareas básicas tales como instalar *git*, *pip* y otras dependencias necesarias para *docker* y *Python*. Asimismo, también se encarga de descargarse el repositorio del proyecto para, posteriormente, instalar las dependencias necesarias del proyecto a través del fichero `docker_requirements.txt`. Por último, también hace uso de un fichero `variables.yml` que contiene las variables que se utilizan en esta receta. Aquellas con contenido sensible han sido encriptadas utilizando **ansible-vault**.
+
+### Ejercicio 3. Crear un rol common que haga ciertas tareas comunes que vayamos a usar en todas las máquinas virtuales de los microservicios de la asignatura (o, para el caso, cualquier otra asignatura).
+
+Tal y como se ha explicado en el ejercicio anterior, se ha creado un rol *common* encargado de instalar herramientas básicas así como de clonar el repositorio del proyecto de la asignatura para su posterior uso. Para más información se puede dirigir a la carpeta [*provision*](https://github.com/lidiasm/ProyectoCC/tree/master/provision) del proyecto.
